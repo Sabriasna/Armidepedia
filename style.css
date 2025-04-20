@@ -1,0 +1,107 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f2f2f2;
+  color: #222;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  z-index: 10;
+}
+
+.logo-group {
+  display: flex;
+  align-items: center;
+}
+
+.logo-symbol {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  height: 28px;
+}
+
+.main-nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #222;
+  font-size: 16px;
+  position: relative;
+}
+
+.main-nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #222;
+  bottom: -5px;
+  left: 0;
+  transition: 0.3s;
+}
+
+.main-nav a:hover::after {
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(270deg, #cccccc, #eeeeee, #cccccc);
+  background-size: 600% 600%;
+  animation: gradient 15s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.centered-text {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.centered-text h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.centered-text p {
+  font-size: 18px;
+  color: #555;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
