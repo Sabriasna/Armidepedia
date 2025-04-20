@@ -1,44 +1,37 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <title>Armidepedia</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f7f7f7;
-            color: #333;
-            text-align: center;
-        }
-        header {
-            padding: 20px;
-            background: white;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        nav a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #555;
-        }
-        h1 { color: #8e6c88; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Armidepedia</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Armidepedia</h1>
-        <nav>
-            <a href="#">Accueil</a>
-            <a href="#">Signes</a>
-            <a href="#">Planètes</a>
-            <a href="#">Éléments</a>
-            <a href="#">Modalités</a>
-            <a href="#">Ères astrologiques</a>
-            <a href="#">Maisons</a>
-            <a href="#">Thème astral</a>
-        </nav>
-    </header>
-    <main>
-        <h2>Bienvenue dans l'univers des étoiles</h2>
-        <p>Découvrez votre signe, votre thème astral et bien plus...</p>
-    </main>
+
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo Armidepedia">
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <div class="hero">
+    <img src="armidepedia.png" alt="Armidepedia" class="title-img">
+  </div>
+
+  <nav id="fullscreen-nav">
+    <ul>
+      <li><a href="#">Signes</a></li>
+      <li><a href="#">Planètes</a></li>
+      <li><a href="#">Éléments</a></li>
+      <li><a href="#">Modalités</a></li>
+      <li><a href="#">Ères astrologiques</a></li>
+      <li><a href="#">Maisons</a></li>
+      <li><a href="#">Thème astral</a></li>
+    </ul>
+  </nav>
+
+  <script src="script.js"></script>
 </body>
 </html>
